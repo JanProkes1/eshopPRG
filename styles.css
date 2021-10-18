@@ -1,0 +1,135 @@
+.container {
+  max-width: 1300px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.container .navbar {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+.container .navbar nav {
+  flex: 1;
+  text-align: right;
+}
+.container .navbar nav ul {
+  display: inline-block;
+  list-style-type: none;
+}
+.container .navbar nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #555;
+}
+
+@media screen and (max-width: 770px) {
+  .logo {
+    display: none;
+  }
+
+  .container .navbar nav {
+    text-align: center;
+  }
+}
+.info-product {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  max-width: 900px;
+  margin: 50px auto 0;
+  background-color: #d9d9d9;
+}
+.info-product img {
+  width: 100%;
+}
+.info-product .text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+}
+.info-product .text h4 {
+  font-size: 30px;
+  margin: 10px;
+}
+.info-product .text button {
+  background-color: red;
+  color: white;
+  border: 0;
+  margin-top: 20px;
+  padding: 10px 30px;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 770px) {
+  .info-product {
+    flex-direction: column;
+  }
+  .info-product img {
+    width: 50%;
+    margin-bottom: 10px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F0FFFF;
+}
+
+p {
+  color: #555;
+}
+
+.about {
+  width: 60%;
+  padding: 20px;
+  background: #F0FFFF;
+  border-radius: 20px;
+  box-shadow: 7px 7px 60px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-wrap: wrap;
+  margin: 100px auto 0;
+  align-items: center;
+  font-family: myriad pro;
+}
+.about img {
+  height: 200px;
+}
+.about .about-text {
+  width: 444px;
+}
+
+.games {
+  align-content: center;
+  justify-content: center;
+  display: flex;
+  margin: 20px auto 0;
+}
+.games .games-img {
+  margin: 30px;
+}
+.games .row {
+  display: flex;
+}
+
+@media screen and (max-width: 770px) {
+  .about {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

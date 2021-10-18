@@ -1,0 +1,43 @@
+.info-product {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  max-width: 900px;
+  margin: 50px auto 0;
+  background-color: $info-background;
+
+  img {
+    width: 100%;
+  }
+
+  .text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+
+    h4 {
+      font-size: 30px;
+      margin: 10px;
+    }
+
+    button {
+      background-color: $primary;
+      color: $text-on-primary;
+      border: 0;
+      margin-top: 20px;
+      padding: 10px 30px;
+      font-size: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .info-product {
+    flex-direction: column;
+    img {
+      width: 50%;
+      margin-bottom: 10px;
+    }
+  }
+}
